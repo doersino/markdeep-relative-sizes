@@ -10,7 +10,7 @@ to enable
 * adjustable base font sizes in https://github.com/doersino/markdeep-thesis,
 * and more!
 
-The conversion rule is simple: `⟨N⟩px` => `calc(⟨N⟩rem / var(--rf))`, where
+The conversion rule is simple: `⟨N⟩px` ⟼ `calc(⟨N⟩rem / var(--rf))`, where
 `--rf` is the base font size the original `px` measurements are assumed to be
 relative to. In fact, `--rf` is the browser default, `16px`. (Note that I
 would've preferred to define `--rf: calc(1rem / 16px)` and then use it like
