@@ -8,4 +8,4 @@ The stylesheet `relativize.css`, which is provided for different Markdeep versio
 
 The conversion rule is simple: `⟨N⟩px` ⟼ `calc(⟨N⟩rem / var(--rf))`, where `--rf` is the base font size the original `px` measurements are assumed to be relative to. In fact, `--rf` is the browser default, `16px`. (Note that I would've preferred to define `--rf: calc(1rem / 16px)` and then use it like `calc(⟨N⟩px * var(--rf))`, but `calc` disappointingly, yet understandably, can't deal with "rem per pixel" units in current browsers.)
 
-When applied to a standard Markdeep document, this stylesheet is designed *not to yield any visual changes* (unless you change the root font size from its `16px` default, that is).
+When applied to a standard Markdeep document (i.e. loaded before Markdeep), this stylesheet is designed *not to yield any visual changes* (unless you change the root font size from its `16px` default, that is).
